@@ -1,10 +1,13 @@
 .L-features {
+  height: 480px;
   background-color: #ffffff;
   padding: 10px 10px 150px 10px;
   margin: 20px 0px;
   border-radius: 20px;
   position: sticky;
   top: 110px;
+
+  position: -webkit-sticky;
 }
 
 ::-webkit-scrollbar {

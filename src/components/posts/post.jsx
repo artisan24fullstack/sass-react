@@ -27,7 +27,7 @@ import { FiGithub } from "react-icons/fi"
 import { useState } from 'react';
 //import moment from 'moment';
 import { Link } from 'react-router-dom';
-
+import Comments from './Comments';
 
 
 const Post = ({ post, posts, setPosts, setFriendsProfile, images }) => {
@@ -94,7 +94,7 @@ const Post = ({ post, posts, setPosts, setFriendsProfile, images }) => {
     const profilePic = Profile
     const username = "Vijay"
     const comment = commentInput
-    const time = moment.utc(new Date(), 'yyyy/MM/dd kk:mm:ss').local().startOf('seconds').fromNow()
+    //const time = moment.utc(new Date(), 'yyyy/MM/dd kk:mm:ss').local().startOf('seconds').fromNow()
 
     const commentObj = {
       id: id,
@@ -221,7 +221,38 @@ const Post = ({ post, posts, setPosts, setFriendsProfile, images }) => {
             <span className='post-comment'>{comments.length} comments</span>
           </div>
 
-          commentaires
+          {showComment && (<div className="commentSection">
+            <form onSubmit={handleCommentInput}>
+              <div className="cmtGroup">
+                <SentimentSatisfiedRoundedIcon className='emoji'
+                />
+
+                <input
+                  type="text"
+                  id="commentInput"
+                  required
+                  placeholder='Add a comment...'
+                  onChange={(e) => setCommentInput(e.target.value)}
+                  value={commentInput}
+                />
+
+                <button type='submit'><SendRoundedIcon className='send' /></button>
+
+              </div>
+            </form>
+
+            <div className="sticky">
+              {comments.map((cmt) => (
+                <Comments
+                  className="classComment"
+                  cmt={cmt}
+                  key={cmt.id}
+                />
+              ))}
+            </div>
+          </div>
+          )}
+
 
         </div>
       </div>
