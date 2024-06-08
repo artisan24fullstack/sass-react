@@ -2,7 +2,8 @@ import { useState } from 'react'
 import Nav from '../layout/navigation'
 import MenuSecondary from '../layout/secondary-menu'
 import TopCard from '../components/cards/top-card'
-import MainPost from '../components/posts/main-post'
+import moment from 'moment/moment'
+
 const Home = () => {
 
 
@@ -13,7 +14,7 @@ const Home = () => {
         username: "Harry",
         profilepicture: "https://i.pravatar.cc/300",
         img: `https://picsum.photos/seed/img1/300/200`,
-        //datetime: moment("20230131", "YYYYMMDD").fromNow(),
+        datetime: moment("20230131", "YYYYMMDD").fromNow(),
         body: "My 1st Post, Have A Good Day Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ipsum laborum necessitatibus ex doloragnam ea?",
         like: 44,
         comment: 3,
@@ -30,7 +31,7 @@ const Home = () => {
         username: "chris dhaniel",
         profilepicture: "https://i.pravatar.cc/300",
         img: `https://picsum.photos/seed/img2/300/200`,
-        //datetime: moment("20230605", "YYYYMMDD").fromNow(),
+        datetime: moment("20230605", "YYYYMMDD").fromNow(),
         body: "My 2st Post, Have A Bad Day Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ipsum laborum necessitatibus ex dolor reiciendis, consequuntur placeat repellat magnam ea?",
         like: 84,
         comment: 3,

@@ -92,9 +92,9 @@ const Post = ({ post, posts, setPosts, setFriendsProfile, images }) => {
 
     const id = comments.length ? comments[comments.length - 1].id + 1 : 1
     const profilePic = Profile
-    const username = "Vijay"
+    const username = "pseudoPersonne"
     const comment = commentInput
-    //const time = moment.utc(new Date(), 'yyyy/MM/dd kk:mm:ss').local().startOf('seconds').fromNow()
+    const time = moment.utc(new Date(), 'yyyy/MM/dd kk:mm:ss').local().startOf('seconds').fromNow()
 
     const commentObj = {
       id: id,

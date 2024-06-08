@@ -73,7 +73,7 @@ const MenuSecondary = ({ profileImg,
         {logOutExit && (
           <div className="logOutExitContainer">
             <button>Add an existing account</button>
-            <Link to="/" style={{ width: "100%" }}><button>Log out @pseudoPersonne</button></Link>
+            <Link to="/" style={{ width: "100%" }}><button>Log out @pseudo</button></Link>
           </div>
         )}
       </div>
