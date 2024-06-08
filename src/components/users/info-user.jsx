@@ -9,6 +9,7 @@ import { IoCameraOutline } from "react-icons/io5"
 import { BiLogOut } from "react-icons/bi"
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
+import ModelProfile from './modal-user';
 
 const InfoUser = ({ userPostData,
   following,
@@ -108,7 +109,19 @@ const InfoUser = ({ userPostData,
         </Link>
 
         <button onClick={() => setOpenEdit(true)}><LiaEdit />Edit Profile</button>
-        Modal
+        <ModelProfile
+          name={name}
+          setName={setName}
+          userName={userName}
+          setUserName={setUserName}
+          countryName={countryName}
+          setCountryName={setCountryName}
+          jobName={jobName}
+          setJobName={setJobName}
+          handleModel={handleModel}
+          openEdit={openEdit}
+          setOpenEdit={setOpenEdit}
+        />
 
 
         <div className="info-details">

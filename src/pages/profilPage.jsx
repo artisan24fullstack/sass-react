@@ -14,9 +14,9 @@ const Profile = () => {
 
   const [name, setName] = useState("")
   const [userName, setUserName] = useState("")
+  //const [countryName, setCountryName] = useState("");
+  //const [jobName, setJobName] = useState('');
   const [profileImg, setProfileImg] = useState(`https://ui-avatars.com/api/?name=${name}+${userName} `)
-
-
   const [modelDetails, setModelDetails] = useState(
     {
       ModelName: "utilisateur connecté",
@@ -57,6 +57,12 @@ const Profile = () => {
           setModelDetails={setModelDetails}
         />
 
+        {/*
+          countryName={countryName}
+          setCountryName={setCountryName}
+          jobName={jobName}
+          setJobName={setJobName}
+        */}
 
       </div>
     </div>

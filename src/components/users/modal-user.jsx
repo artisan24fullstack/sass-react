@@ -1,5 +1,7 @@
 import { Modal, useMantineTheme } from '@mantine/core';
+import '@mantine/core/styles.css';
 
+import { MantineProvider } from '@mantine/core';
 function ModelProfile({ openEdit, setOpenEdit, handleModel,
   name, setName, userName,
   setUserName, countryName, setCountryName,
