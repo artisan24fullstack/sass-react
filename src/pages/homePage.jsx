@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Nav from '../layout/navigation'
+import MenuSecondary from '../layout/secondary-menu'
 const Home = () => {
 
   const [search, setSearch] = useState("")
@@ -16,9 +17,10 @@ const Home = () => {
         showMenu={showMenu}
         setShowMenu={setShowMenu}
       />
+      <h1>Home page</h1>
 
       <div className="home">
-        <h1>Home page</h1>
+        <MenuSecondary />
       </div>
 
     </div>

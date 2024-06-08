@@ -1,6 +1,6 @@
 nav {
   width: 100%;
-  background-color: rgb(126, 117, 117);
+  background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -200,7 +200,8 @@ nav {
 
   .n-form-button {
     width: 55%;
-    background-color: aqua;
+    padding-right: 10px;
+
   }
 
   .n-img {
@@ -244,7 +245,7 @@ nav {
 
   .social-icons {
     width: 100vw;
-    background-color: rgb(126, 117, 117);
+    background-color: var(--primary-color);
     position: fixed;
     bottom: 0px;
     color: #fff;
@@ -330,7 +331,7 @@ nav {
 
   .social-icons {
     width: 100vw;
-    background-color: rgb(126, 117, 117);
+    background-color: var(--primary-color);
     position: fixed;
     bottom: 0px;
     color: #fff;
