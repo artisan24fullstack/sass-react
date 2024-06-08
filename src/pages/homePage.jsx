@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Nav from '../layout/navigation'
 import MenuSecondary from '../layout/secondary-menu'
 import TopCard from '../components/cards/top-card'
+import MainPost from '../components/posts/main-post'
 const Home = () => {
 
 
@@ -10,8 +11,8 @@ const Home = () => {
       {
         id: 1,
         username: "Harry",
-        profilepicture: `https://picsum.photos/seed/img1/80/40`,
-        img: `https://picsum.photos/seed/img1/100/200`,
+        profilepicture: "https://i.pravatar.cc/300",
+        img: `https://picsum.photos/seed/img1/300/200`,
         //datetime: moment("20230131", "YYYYMMDD").fromNow(),
         body: "My 1st Post, Have A Good Day Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ipsum laborum necessitatibus ex doloragnam ea?",
         like: 44,
@@ -27,8 +28,8 @@ const Home = () => {
       {
         id: 2,
         username: "chris dhaniel",
-        profilepicture: `https://picsum.photos/seed/img2/80/40`,
-        img: `https://picsum.photos/seed/img1/100/200`,
+        profilepicture: "https://i.pravatar.cc/300",
+        img: `https://picsum.photos/seed/img2/300/200`,
         //datetime: moment("20230605", "YYYYMMDD").fromNow(),
         body: "My 2st Post, Have A Bad Day Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ipsum laborum necessitatibus ex dolor reiciendis, consequuntur placeat repellat magnam ea?",
         like: 84,
@@ -111,6 +112,7 @@ const Home = () => {
           images={images}
           setImages={setImages}
         />
+
       </div>
 
     </div>

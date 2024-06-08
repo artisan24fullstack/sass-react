@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import InputPost from '../posts/input-post'
+import MainPost from '../posts/main-post'
 
 const TopCard = ({ handleSubmit,
   body,
@@ -41,6 +42,12 @@ const TopCard = ({ handleSubmit,
         emptImg={emptImg}
         setEmptImg={setEmptImg}
         setImages={setImages}
+      />
+      <MainPost
+        posts={searchResults}
+        setPosts={setPosts}
+        setFriendsProfile={setFriendsProfile}
+        images={images}
       />
     </div>
   )
