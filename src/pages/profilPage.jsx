@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import Nav from '../layout/navigation'
 import MenuSecondary from '../layout/secondary-menu'
+import ProfileUser from '../components/users/profile-user'
 
 const Profile = () => {
 
-  const [following, setFollowing] = useState(3)
+  const [following, setFollowing] = useState()
   const [search, setSearch] = useState("")
 
   const [showMenu, setShowMenu] = useState(false)
@@ -13,7 +14,7 @@ const Profile = () => {
 
   const [name, setName] = useState("")
   const [userName, setUserName] = useState("")
-  const [profileImg, setProfileImg] = useState(`https://ui-avatars.com/api/?name=name+userName`)
+  const [profileImg, setProfileImg] = useState(`https://ui-avatars.com/api/?name=${name}+${userName} `)
 
 
   const [modelDetails, setModelDetails] = useState(
@@ -34,13 +35,28 @@ const Profile = () => {
         setShowMenu={setShowMenu}
         profileImg={profileImg}
       />
-      <div className="home">
+      <div className="home homeProfil">
         <MenuSecondary
           following={following}
           setFollowing={setFollowing}
           profileImg={profileImg}
           modelDetails={modelDetails}
         />
+        <ProfileUser
+          following={following}
+          search={search}
+          images={images}
+          setImages={setImages}
+          name={name}
+          setName={setName}
+          userName={userName}
+          setUserName={setUserName}
+          profileImg={profileImg}
+          setProfileImg={setProfileImg}
+          modelDetails={modelDetails}
+          setModelDetails={setModelDetails}
+        />
+
 
       </div>
     </div>

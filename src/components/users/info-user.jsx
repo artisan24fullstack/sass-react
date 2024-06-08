@@ -22,7 +22,7 @@ const InfoUser = ({ userPostData,
   setUserName }) => {
 
 
-  const [coverImg, setCoverImg] = useState(Info3)
+  const [coverImg, setCoverImg] = useState()
 
   const importProfile = useRef()
   const importCover = useRef()
@@ -131,7 +131,7 @@ const InfoUser = ({ userPostData,
 
           <div className="info-col-2">
             <div>
-              <h2>5,000</h2>
+              <h2>0</h2>
               <span>Followers</span>
             </div>
             <div>
