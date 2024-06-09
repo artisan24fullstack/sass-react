@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Nav from '../layout/navigation'
 import MenuSecondary from '../layout/secondary-menu'
 import ProfileUser from '../components/users/profile-user'
+import Aside from '../layout/aside'
 
 const Profile = () => {
 
@@ -57,12 +58,7 @@ const Profile = () => {
           setModelDetails={setModelDetails}
         />
 
-        {/*
-          countryName={countryName}
-          setCountryName={setCountryName}
-          jobName={jobName}
-          setJobName={setJobName}
-        */}
+        <Aside />
 
       </div>
     </div>

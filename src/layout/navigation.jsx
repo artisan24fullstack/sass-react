@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import { Link } from 'react-router-dom';
 
@@ -7,10 +7,9 @@ import { LiaUserFriendsSolid } from "react-icons/lia"
 import { IoNotificationsOutline } from "react-icons/io5"
 import { TbMessage } from "react-icons/tb"
 
-//import Profile from "../../assets/profile.jpg"
-
 const Nav = ({ search, setSearch, setShowMenu, profileImg }) => {
 
+  let Profile = useState(`https://ui-avatars.com/api/?name=`)
 
 
   return (
@@ -46,7 +45,11 @@ const Nav = ({ search, setSearch, setShowMenu, profileImg }) => {
           className='nav-icons'
           onClick={() => setShowMenu(true)} />
       </div>
-
+      <div className="n-profile" >
+        <Link to="/profile">
+          <img src={profileImg ? (profileImg) : Profile} className='n-img' style={{ marginBottom: "-7px" }} />
+        </Link>
+      </div>
 
 
 

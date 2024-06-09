@@ -10,13 +10,17 @@
 
 //@import "./components/_.scss";
 @import "./components/cards/top-card.scss";
+
 @import "./components/posts/input-post.scss";
 @import "./components/posts/post.scss";
 @import "./components/posts/comments.scss";
 
+@import "./components/users/suggestion-user.scss";
+
 //@import "./layout/_.scss";
 @import "./layout/navigation.scss";
 @import "./layout/secondary-menu.scss";
+@import "./layout/aside.scss";
 
 //@import "./pages/_.scss";
 @import "./pages/HomePage.scss";
