@@ -12,7 +12,7 @@ const FollowingList = ({ data, following, setFollowing }) => {
 
 
   const handleFollow = () => {
-    setFollowing(booleonFollowing ? following - 1 : following + 1)
+    //setFollowing(booleonFollowing ? following - 1 : following + 1)
     setBooleonFollowing(!booleonFollowing)
 
     setFollowFollowed(boolfollowFollowed ? "Follow" : "Following")

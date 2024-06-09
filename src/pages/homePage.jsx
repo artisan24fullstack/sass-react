@@ -96,7 +96,7 @@ const Home = () => {
         showMenu={showMenu}
         setShowMenu={setShowMenu}
       />
-      <h1>Home page</h1>
+      <header>Breadcrumb</header>
 
       <div className="home">
         <MenuSecondary />

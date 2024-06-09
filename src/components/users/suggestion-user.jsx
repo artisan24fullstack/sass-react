@@ -32,7 +32,7 @@ const SuggestionUser = () => {
       </div>
       <div className="sugg-people">
         <div className="s-left">
-          <img src="https://i.pravatar.cc/150?img=7" alt="" />
+          <img src="https://i.pravatar.cc/150?img=8" alt="" />
           <h3>Prénom Nom</h3>
         </div>
 

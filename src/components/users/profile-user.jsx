@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react'
 
 import moment from 'moment'
 import InfoUser from './info-user'
-import ModelProfile from './modal-user'
 
 const ProfileUser = ({ following,
   search,
@@ -100,22 +99,6 @@ const ProfileUser = ({ following,
       />
 
 
-      {/*
-
-        < ModelProfile
-        name={name}
-        setName={setName}
-        userName={userName}
-        setUserName={setUserName}
-        handleModel={handleModel}
-        openEdit={openEdit}
-        setOpenEdit={setOpenEdit}
-      />
-          countryName={countryName}
-        setCountryName={setCountryName}
-        jobName={jobName}
-        setJobName={setJobName}
-      */}
     </div>
   )
 }

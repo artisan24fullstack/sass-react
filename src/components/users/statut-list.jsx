@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 
 const StatutList = ({ value }) => {
-  //  let Profile = useState(`https://ui-avatars.com/api/?name=`)
 
-  //{profileImg ? (profileImg) : Profile}
 
   let statutUser = useState(value.statut)
-  console.log(statutUser)
+  //  console.log(statutUser)
 
 
   return (

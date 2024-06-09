@@ -22,7 +22,7 @@ const FollowingUser = ({ following, setFollowing }) => {
 
 
 
-      <button className='SM-btn' onClick={() => setShowMore(true)}>Show more</button>
+      {/*<button className='SM-btn' onClick={() => setShowMore(true)}>Show more</button>*/}
     </div>
 
   )
