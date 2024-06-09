@@ -2,6 +2,7 @@ import React from 'react'
 
 import { GrFormClose } from "react-icons/gr"
 import SuggestionUser from '../components/users/suggestion-user'
+import StatutUser from '../components/users/statut-user'
 
 const Aside = ({ following, setFollowing, showMenu, setShowMenu }) => {
 
@@ -15,8 +16,8 @@ const Aside = ({ following, setFollowing, showMenu, setShowMenu }) => {
         setFollowing={setFollowing}
       />
 
+      <StatutUser />
       {/*
-      <StatusUser />
 
       <FollowingUser
         following={following}
