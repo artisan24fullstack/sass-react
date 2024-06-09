@@ -3,7 +3,7 @@ import React from 'react'
 import { GrFormClose } from "react-icons/gr"
 import SuggestionUser from '../components/users/suggestion-user'
 import StatutUser from '../components/users/statut-user'
-
+import FollowingUser from '../components/users/following-user'
 const Aside = ({ following, setFollowing, showMenu, setShowMenu }) => {
 
   return (
@@ -17,13 +17,10 @@ const Aside = ({ following, setFollowing, showMenu, setShowMenu }) => {
       />
 
       <StatutUser />
-      {/*
-
       <FollowingUser
         following={following}
         setFollowing={setFollowing}
       />
-*/}
     </div>
   )
 }
